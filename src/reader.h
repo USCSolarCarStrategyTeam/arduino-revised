@@ -1,5 +1,4 @@
 #include "defs.h"
-#include "source.h"
 #include "input.h"
 
 struct Reader {
