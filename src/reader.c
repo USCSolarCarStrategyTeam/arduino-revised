@@ -8,4 +8,5 @@ int read(struct Reader* reader) {
             // Extract data from input
         }
     }
+    return 0;
 }
