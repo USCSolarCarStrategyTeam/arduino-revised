@@ -1,7 +1,3 @@
-#define CACHE_CAP 64
-#define NUM_SOURCE 8
-#define NUM_OUTPUT 2
-
 enum SourceType {
     Test,
     Temp,
