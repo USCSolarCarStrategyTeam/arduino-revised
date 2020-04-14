@@ -1,3 +1,4 @@
+struct Cache;
 struct Input;
 struct Output;
 struct Reader;

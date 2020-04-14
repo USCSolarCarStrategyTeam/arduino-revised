@@ -1,7 +1,7 @@
-#include "defs.h"
 #include "types.h"
+#include "cache.h"
 
 struct Input {
     enum InputType d_type;
-    double d_cache[CACHE_CAP];
+    struct Cache d_cache;
 };
