@@ -2,5 +2,5 @@
 #include "input.h"
 
 struct Reader {
-    struct Input d_inputs[N_INPUT];
+    struct Input* d_inputs[N_INPUT];
 };
