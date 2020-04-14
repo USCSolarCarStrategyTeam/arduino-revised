@@ -2,5 +2,5 @@
 #include "output.h"
 
 struct Writer {
-    struct Output d_outputs[N_OUTPUT];
+    struct Output* d_outputs[N_OUTPUT];
 };
