@@ -1,6 +1,7 @@
 #include "defs.h"
 #include "source.h"
+#include "input.h"
 
 struct Reader {
-    struct Source d_sources[N_SOURCE];
+    struct Input d_inputs[N_INPUT];
 };

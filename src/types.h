@@ -1,4 +1,4 @@
-enum SourceType {
+enum InputType {
     Test,
     Temp,
     Volt,
@@ -6,7 +6,7 @@ enum SourceType {
     RPM
 };
 
-static const char* SourceTypeLabels[] = {
+static const char* InputLabels[] = {
     "Test",
     "Temp",
     "Volt",
