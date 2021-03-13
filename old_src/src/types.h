@@ -1,3 +1,8 @@
+struct Cache;
+struct Input;
+struct Output;
+struct Reader;
+struct Writer;
 
 enum InputType {
     Test,
