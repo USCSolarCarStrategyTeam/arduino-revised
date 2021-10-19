@@ -1,6 +1,6 @@
 #include "telemetry.h"
 #include <stdio.h>
-
+#include <cache.h>
 
 int main(void){
     cprintf("Reading configuration file...");
@@ -25,5 +25,5 @@ int main(void){
         // process(processor);
         // write(writer);
     }
-    
+
 }

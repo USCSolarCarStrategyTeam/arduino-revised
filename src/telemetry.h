@@ -3,11 +3,6 @@
 #define N_INPUT 8           // Number of Input types a Reader stores
 #define N_OUTPUT 3          // Number of Output types a Writer stores
 
-
-typedef struct Cache {
-    double data_vals[CACHE_CAP];    //stores CACHE_CAP number of values in array of type double
-} Cache;
-
 typedef struct Input {
     enum InputType data_type;
     Cache data_cache;
@@ -22,7 +17,7 @@ typedef struct Reader {
 } Reader;
 
 /*typedef struct Processor {
-    
+
 } Processor;*/
 
 typedef struct Writer {
