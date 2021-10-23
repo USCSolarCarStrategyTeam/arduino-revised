@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include "cache.h"
 
-cache* cache_init(){
-	cache* c = malloc(sizeof(cache));
+struct cache* cache_init(){
+	struct cache* c = malloc(sizeof(cache));
 	c->head = NULL;
 	c->tail= NULL;
 	c->size = 0;
 	return c;
 }
 ​
-node* node_init(){
-	node* n  = malloc(sizeof(node));
+struct node* node_init(){
+	struct node* n  = malloc(sizeof(node));
 	n->data = NULL_INT;
 	n->next = NULL;
 	n->prev = NULL;
@@ -24,7 +24,7 @@ int isEmpty(cache* c) {
 }
 ​
 // Inserts one node at beginning of list, if size is maxed out, remove last element
-void insert(cache* c, int data) {
+void insert(struct cache* c, int data) {
 	// Remove end node if size is maxed out when new node inserted
 	if(c->size == CACHE_MAX) {
 		c->tail = c->tail->prev;
@@ -34,7 +34,7 @@ void insert(cache* c, int data) {
 	}
 ​
    //create a link, allocates memory with malloc function call
-   node* newNode = node_init();
+   struct node* newNode = node_init();
    newNode->data = data;
 
    if(isEmpty(c)) {
@@ -51,12 +51,12 @@ void insert(cache* c, int data) {
    c->size++;
 }
 ​
-void printList(cache* c){
+void printList(struct cache* c){
     if(isEmpty()){
         return;
     }
 
-    node* tempNode = c->head;
+    struct node* tempNode = c->head;
 ​
 	while(tempNode->next != NULL){
 		printf("%d \n", tempNode->data);
