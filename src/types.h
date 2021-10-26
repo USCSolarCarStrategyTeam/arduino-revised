@@ -1,14 +1,14 @@
+#define N_IN_TYPES 4
+#define N_OUT_TYPES 3;
 
 enum InputType {
-    Test,
     Temp,
     Volt,
     Curr,
     RPM
 };
 
-static const char* InputLabels[] = {
-    "Test",
+static const char* InputLabels[N_IN_TYPES] = {
     "Temp",
     "Volt",
     "Curr",
@@ -21,8 +21,10 @@ enum OutputType {
     XBee            // XBee Radio Module
 };
 
-static const char* OutputLabels[] = {
+static const char* OutputLabels[N_OUT_TYPES] = {
     "Test",
     "Pi",
     "XBee",
 };
+
+enum InputType* str2enum(char*);
